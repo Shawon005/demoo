@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Times New Roman', serif;
+  font-size: 1rem;
+  background: whitesmoke;
+}
+
+button{
+  padding: 8px;
+  outline: none;
+  cursor: pointer;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background: whitesmoke;
+}
+button:active{
+  background-color: rgba(8, 18, 73, 0.877);
+}
+button:hover{
+  color: rgba(66, 165, 46, 0.911);
+  background-color: rgb(20, 25, 90);
+}
+
+.container{
+  width: 1280px;
+  margin: auto;
+}
+
+header{background-color: rgb(0, 0, 0);}
+
+#header{
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  padding: 0 20px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+#header button{
+  font-family: inherit;
+  border: 2px solid blue;
+  font-style:oblique;
+}
+#header input{
+  border: 2px solid blue;
+}
+
+#create_card{
+  display: none;
+  width: 570px;
+  height: 250px;
+  margin:auto;
+  padding: 20px;
+  margin-top: 10px;
+  background: whitesmoke;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+}
+#empty_card{
+  width: 370px;
+  margin:auto;
+  padding: 20px;
+  margin-top: 10px;
+  background: whitesmoke;
+  
+}
+
+#create_card h2{
+  color: black;
+  text-align: center;
+}
+
+#create_card textarea{
+  width: 100%;
+  border-radius: 5px;
+  font-family: inherit;
+  border: 1px solid lightgray;
+}
+
+#create_card button{width: fit-content;
+margin-left: 45% ;
+margin-top: 30px;
+}
+#make_new{
+  background: rgb(28, 25, 216);
+  
+}
+
+#flashcards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  padding: 0px 10px;
+}
+
+.flashcard{
+  width: 570px;
+  height: 250px;
+  word-wrap: break-word;
+  margin: 10px; 
+  cursor: pointer;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+}
+.flashcard button{
+  margin-left: 93%;
+  margin-top: 90%;
+  color: #000;
+  background: url("edit1.png");
+  background-size: 30px 30px;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+  
+} 
+.flashcard button :hover{
+  box-shadow: 0px 4px 7px 0px rgba(253, 22, 22, 0.9);
+}
+
+.flashcard h2{font-size: 1.5rem;}
+
+@media(max-width:1280px){
+  .container{width: 100%;}
+}
+
+@media(max-width:768px){
+  .flashcard{margin: auto;}
+
+  .flashcard{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:480px){
+  #header{
+    padding: 20px;
+    gap: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #create_card{width: 95%;}
+
+  .flashcard{width: 100%;}
+
+}
